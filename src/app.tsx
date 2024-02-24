@@ -1,17 +1,21 @@
+import { RouterProvider } from "react-router-dom";
+import { router } from "./components/Routes";
+
 import { Sidebar } from "./components/sidebar/Sidebar";
-import { Content } from "./components/content/Content";
+
 
 import "../src/styles/css/global.css"
+
 
 export function App() {
   return (
     <div className="layout">
-
       <Sidebar />
 
-      <Content />
+      <div className="content">
+        <RouterProvider router={router} />
+      </div>
       
-
     </div>
   )
 }

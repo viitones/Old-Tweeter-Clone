@@ -28,6 +28,11 @@ a {
   grid-template-columns: 300px 1fr;
 }
 
+.content {
+  border-left: 1px solid #ebeef0;
+  border-right: 1px solid #ebeef0;
+}
+
 .sidebar {
   padding: 1.5rem 1.25rem;
   display: flex;
@@ -74,26 +79,22 @@ a {
   height: 2rem;
 }
 
-.content {
-  border-left: 1px solid #ebeef0;
-  border-right: 1px solid #ebeef0;
-}
-.content .new-tweet-form {
+.new-tweet-form {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.content .new-tweet-form label {
+.new-tweet-form label {
   display: flex;
   gap: 0.75rem;
 }
-.content .new-tweet-form label img {
+.new-tweet-form label img {
   width: 3rem;
   height: 3rem;
   border-radius: 9999px;
 }
-.content .new-tweet-form label textarea {
+.new-tweet-form label textarea {
   flex: 1;
   border: 0;
   font-size: 1.25rem;
@@ -101,16 +102,16 @@ a {
   margin-top: 0.75rem;
   resize: none;
 }
-.content .new-tweet-form label textarea:focus {
+.new-tweet-form label textarea:focus {
   outline: none;
 }
-.content .new-tweet-form label textarea::-moz-placeholder {
+.new-tweet-form label textarea::-moz-placeholder {
   color: #5b7883;
 }
-.content .new-tweet-form label textarea::placeholder {
+.new-tweet-form label textarea::placeholder {
   color: #5b7883;
 }
-.content .new-tweet-form button[type=submit] {
+.new-tweet-form button[type=submit] {
   margin-left: auto;
   background: #1da1f2;
   border-radius: 9999px;
@@ -120,7 +121,7 @@ a {
   font-weight: 900;
   border: 0;
 }
-.content .new-tweet-form button[type=submit]:hover {
+.new-tweet-form button[type=submit]:hover {
   filter: brightness(0.9);
 }
 

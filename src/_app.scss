@@ -5,3 +5,7 @@
   display: grid;
   grid-template-columns: 300px 1fr;
 }
+.content{
+  border-left: 1px solid vars.$border-color;
+  border-right: 1px solid vars.$border-color;
+}

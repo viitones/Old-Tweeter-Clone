@@ -1,6 +1,10 @@
 import { ArrowClockwise, ChatCircle, Heart } from "@phosphor-icons/react";
 
-export function Tweet(){
+interface TweetProps {
+  content: string
+}
+
+export function Tweet(props: TweetProps){
   return(
     <a className="tweet">
       <img src="https://github.com/viitones.png" alt="victor hugo" />
@@ -11,7 +15,9 @@ export function Tweet(){
           <span>@vitones</span>
         </div>
 
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex nihil, at impedit vero possimus placeat eligendi suscipit qui dolores delectus a officia vitae tempore repudiandae enim eius mollitia non quibusdam!</p>
+        <p>
+          {props.content}
+        </p>
 
         <div className="tweet-content-footer">
           <button>
