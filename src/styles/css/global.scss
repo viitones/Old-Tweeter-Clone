@@ -1,0 +1,8 @@
+//parametros iniciais
+@use "../sass/reset";
+@use "../sass/vars";
+@use "../sass/mixins";
+
+// componentes
+@import "../../app";
+@import "../components/index.scss"

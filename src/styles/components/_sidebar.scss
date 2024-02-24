@@ -1,0 +1,53 @@
+.sidebar{
+  padding: 1.5rem 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .logo{
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .new-tweet{
+    background-color: vars.$twitter-blue;
+    border-radius: 9999px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: vars.$primary-color;
+    font-size: 1.25rem;
+    font-weight: 900;
+    border: none;
+
+    &:hover{
+      filter: brightness(0.9);
+    }
+  } 
+  
+  .main-navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    a.active{
+      color: vars.$twitter-blue;
+    }
+
+    a{
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-decoration: none;
+
+      svg{
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
