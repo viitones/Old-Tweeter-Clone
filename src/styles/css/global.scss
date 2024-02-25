@@ -2,7 +2,8 @@
 @use "../sass/reset";
 @use "../sass/vars";
 @use "../sass/mixins";
+@use "../sass/breakpoints";
 
 // componentes
-@import "../../app";
+@import "../../default";
 @import "../components/index.scss"

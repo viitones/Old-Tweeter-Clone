@@ -5,6 +5,11 @@
   flex-direction: column;
   gap: 2rem;
 
+  @include breakpoints.media-max(m){
+        padding: 1.5rem 0.75rem;
+        align-items: center;
+  }
+
   .logo{
     width: 3rem;
     height: 3rem;
@@ -24,6 +29,22 @@
 
     &:hover{
       filter: brightness(0.9);
+    }
+
+    svg{
+      width: 1.5rem;
+      height: 1.5rem;
+      display: none;
+
+      @include breakpoints.media-max(m){
+        display: block;
+      }
+    }
+
+    span{
+      @include breakpoints.media-max(m){
+        display: none;
+      }
     }
   } 
   
@@ -47,6 +68,12 @@
       svg{
         width: 2rem;
         height: 2rem;
+      }
+
+      span{
+        @include breakpoints.media-max(m){
+          display: none;
+        }
       }
     }
   }

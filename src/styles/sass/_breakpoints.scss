@@ -1,0 +1,19 @@
+// @mixin tablet{
+//   @media screen and (min-width: #{$tablet}) {
+//     @content
+//   }
+// };
+
+$breakpoints: (
+  s: 576px,
+  m: 780px,
+  l: 992px,
+  xl: 1200px
+);
+
+@mixin media-max($key){
+  $size: map-get($breakpoints , $key);
+  @media screen and (max-width: $size) {
+    @content
+  }
+};

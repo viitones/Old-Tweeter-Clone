@@ -3,6 +3,7 @@ import { FormEvent, KeyboardEvent, useState } from "react";
 import { Header } from "../components/content/Header";
 import { Separator } from "../components/content/Separator";
 import { Tweet } from "../components/content/Tweet";
+import { PaperPlaneRight } from "@phosphor-icons/react";
 
 
 export function Status(){
@@ -51,7 +52,10 @@ export function Status(){
           placeholder="Tweet your answer"/>
         </label>
 
-        <button type="submit">Submit</button>
+        <button type="submit">
+          <PaperPlaneRight />
+          <span>Answer</span>
+        </button>
       </form>
 
 

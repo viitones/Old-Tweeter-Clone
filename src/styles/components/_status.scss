@@ -23,6 +23,10 @@
       margin-top: 1.25rem;
       resize: none;
 
+      @include breakpoints.media-max(s){
+        font-size: 1rem;
+      }
+
       &:focus{
         outline: none;
       }
@@ -43,8 +47,28 @@
     font-weight: 900;
     border: 0;
 
+    @include breakpoints.media-max(s){
+      padding: 0.75rem;
+    }
+
     &:hover{
       filter: brightness(0.9);
+    }
+
+    svg{
+      width: 1.5rem;
+      height: 1.5rem;
+      display: none;
+
+      @include breakpoints.media-max(s){
+        display: block;
+      }
+    }
+
+    span{
+      @include breakpoints.media-max(s){
+        display: none;
+      }
     }
   }
 }
