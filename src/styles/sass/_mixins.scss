@@ -3,3 +3,9 @@
   height: 3rem;
   border-radius: 9999px;
 };
+@mixin forms(){
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
